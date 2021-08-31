@@ -465,6 +465,17 @@ body{
          max-width: none;
      }
  }
+
+ @media (max-width: 700px){
+     .modal{
+         width: 320px;
+         max-width: none;
+     }
+     .form-inner h3{
+         font-size: 23px;
+     }
+ }
+
  @media (max-width: 500px){
     body{
         font-size: 14px;
@@ -484,5 +495,9 @@ body{
     }
     .page__important, .text-important{
         font-size: 16px;
+    }
+    .callback{
+        right: 25px;
+        bottom: 25px;
     }
  }
