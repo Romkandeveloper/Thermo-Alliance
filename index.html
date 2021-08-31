@@ -28,7 +28,7 @@
                 <div class = "page__wrapper">
                     <div class = "logo logo-left">
                         <a href = "http://thermoalliance.com.ua/">
-                            <img src = "./images/logo.png">
+                            <img src = "http://thermoalliance.com.ua/site/img/logo.png">
                         </a>
                     </div>
                     <h2 class = "page__title">Загальна інформація</h2>
@@ -499,7 +499,7 @@
                 </div>
             </section>
 
-            <section class = "page page-bg-bottom">
+            <footer class = "page page-bg-bottom footer">
                 <p class = "text-important text-center text-imp">
                     З питань співпраці, технічної та сервісної підтримки
                     звертайтесь за номерами
@@ -523,7 +523,10 @@
                         <a class = "main-number" href = "tel:+380800210247">0-800-210-247</a>
                     </div>
                 </div>
-            </section>
+            </footer>
+            <div class = "subfooter">
+                THERMO ALLIANCE © 2021. Всі права захищені.
+            </div>
         </div>
 
         <div class = "callback">
@@ -531,12 +534,13 @@
         </div>
 
         <form class="modal">
+            <div class = "modal__close"></div>
             <div class="form-inner">
             <h3>Звортній дзвінок</h3>
-            <label for="username">ПІБ</label>
-            <input type="text" id="username">
-            <label for="tel">Номер телефону</label>
-            <input id="tel" placeholder="+38 (">
+            <label for="username" class = "required">ПІБ</label>
+            <input required type="text" id="username">
+            <label for="tel" class = "required">Номер телефону</label>
+            <input required id="tel">
             <input type="submit" value="Відправити">
             </div>
         </form>

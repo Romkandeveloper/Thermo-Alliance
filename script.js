@@ -1,18 +1,29 @@
 const callBack = document.querySelector('.callback');
-const shadoow = document.querySelector('.shadow');
+const shadow = document.querySelector('.shadow');
 const modal = document.querySelector('.modal'); 
+const closeModalBtn = document.querySelector('.modal__close');
+
+shadow.addEventListener('click', closeModal);
+
+closeModalBtn.addEventListener('click', closeModal);
+
+function closeModal(){
+    shadow.style.display = "none";
+    modal.classList.remove('active');
+}
 
 callBack.addEventListener('click',function(){
-    shadoow.style.display = "block";
+    shadow.style.display = "block";
     modal.classList.add('active');
 });
 
-shadoow.addEventListener('click',function(){
-    this.style.display = "none";
-    modal.classList.remove('active');
-});
+document.addEventListener('keydown', function(event) {
+    if (event.code == 'Escape' && modal.classList.contains('active')) closeModal();
+  });
 
 var phoneMask = IMask(
     document.getElementById('tel'), {
-      mask: '+{38} (000) 000-00-00'
+      mask: '+{38} (000) 000-00-00',
+      lazy: false,
 });
+
