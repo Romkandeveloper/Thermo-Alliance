@@ -342,7 +342,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to right bottom, rgba(43, 44, 78, 1), rgba(104, 22, 96, 1));
+    background: linear-gradient(to right bottom, #333333, #333333);
  }
  .form-inner {
     position: relative;
@@ -364,7 +364,7 @@ body{
     bottom: -6px;
     height: 2px;
     width: 60px;
-    background: #fcbf0a;
+    background: #e51610;
  }
  .form-inner label {
     display: block;
@@ -381,7 +381,7 @@ body{
     margin: 10px 0 15px;
     border-width: 0;
     line-height: 40px;
-    border-radius: 20px;
+    
     color: rgb(80, 80, 80);
     background: rgba(255, 255, 255, 1);
     font-family: 'Roboto', sans-serif;
@@ -420,7 +420,8 @@ body{
     transform: rotate(45deg);
  }
  .form-inner input[type="submit"] {
-    background: #fcbf0a;
+    background: #e51610;
+    color: #fff;
     cursor: pointer;
  }
 
