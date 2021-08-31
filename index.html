@@ -4,7 +4,7 @@
         <title>Thermo-Alliance</title>
         <meta charset="UTF-8">
         <link rel = "stylesheet" href = "./style.css">
-        <link href="https://uk.allfont.net/allfont.css?fonts=days" rel="stylesheet" type="text/css" />
+        <link href="https://uk.allfont.net/allfont.css?fonts=days" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div class = "wrapper">
@@ -26,7 +26,9 @@
             <section class = "page">
                 <div class = "page__wrapper">
                     <div class = "logo logo-left">
-                        <img src = "logo.png">
+                        <a href = "http://thermoalliance.com.ua/">
+                            <img src = "logo.png">
+                        </a>
                     </div>
                     <h2 class = "page__title">Загальна інформація</h2>
                     <p class = "page__text">
@@ -522,5 +524,24 @@
                 </div>
             </section>
         </div>
+
+        <div class = "callback">
+
+        </div>
+
+        <form class="modal">
+            <div class="form-inner">
+            <h3>Звортній дзвінок</h3>
+            <label for="username">ПІБ</label>
+            <input type="text" id="username">
+            <label for="tel">Номер телефону</label>
+            <input id="tel" type="" placeholder="+38 (">
+            <input type="submit" value="Відправити">
+            </div>
+        </form>
+        
+        <div class = "shadow"></div>
+
+        <script src = "./script.js"></script>
     </body>
 </html>

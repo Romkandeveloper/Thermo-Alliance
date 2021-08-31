@@ -316,3 +316,138 @@ body{
     position: relative;
     z-index: 10;
 }
+
+/* Form */
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    display: none;
+    max-width: 400px;
+    padding: 60px 50px;
+    margin: 50px auto 0;
+    background-image: url(./);
+    background-size: cover;
+    z-index: 10000000;
+ }
+ .modal.active{
+     display: block;
+ }
+ .modal:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right bottom, rgba(43, 44, 78, 1), rgba(104, 22, 96, 1));
+ }
+ .form-inner {
+    position: relative;
+ }
+ .form-inner h3 {
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+ }
+ .form-inner h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 60px;
+    background: #fcbf0a;
+ }
+ .form-inner label {
+    display: block;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, .6);
+    text-transform: uppercase;
+    font-size: 14px;
+ }
+ .form-inner input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: rgb(80, 80, 80);
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Roboto', sans-serif;
+ }
+ .form-inner input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+ }
+ #custom-checkbox+label {
+    position: relative;
+    margin: 20px 0;
+    text-transform: none;
+    cursor: pointer;
+ }
+ #custom-checkbox+label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: text-top;
+    background: white;
+ }
+ #custom-checkbox:checked+label:before {
+    background: #1762EE;
+ }
+ #custom-checkbox:checked+label:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 20px;
+    top: 9px;
+    background: white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+ }
+ .form-inner input[type="submit"] {
+    background: #fcbf0a;
+    cursor: pointer;
+ }
+
+ .callback{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg enable-background='new 0 0 120 120' height='100px' id='Layer_1' version='1.1' viewBox='0 0 120 120' width='100px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' original='%2348b1f7'%3E%3Cstyle%3E @-webkit-keyframes twirl-phone %7B 0%25 %7B %7D 30%25 %7B -webkit-transform: rotate(-6deg) translateY(-1px); %7D 75%25 %7B -webkit-transform: rotate(5deg) translateY(-1px); %7D 100%25 %7B -webkit-transform: rotate(0deg) translateY(-1px); %7D %7D @-moz-keyframes twirl-phone %7B 0%25 %7B %7D 30%25 %7B -moz-transform: rotate(-6deg) translateY(-1px); %7D 75%25 %7B -moz-transform: rotate(5deg) translateY(-1px); %7D 100%25 %7B -moz-transform: rotate(0deg) translateY(-1px); %7D %7D @-o-keyframes twirl-phone %7B 0%25 %7B %7D 30%25 %7B -o-transform: rotate(-6deg) translateY(-1px); %7D 75%25 %7B -o-transform: rotate(5deg) translateY(-1px); %7D 100%25 %7B -o-transform: rotate(0deg) translateY(-1px); %7D %7D @keyframes twirl-phone %7B 0%25 %7B %7D 30%25 %7B transform: rotate(-6deg) translateY(-1px); %7D 75%25 %7B transform: rotate(5deg) translateY(-1px); %7D 100%25 %7B transform: rotate(0deg) translateY(-1px); %7D %7D %23lb_phone-head %7B -webkit-transform-origin: 50%25 50%25; -webkit-animation: twirl-phone 0.5s alternate infinite linear; -moz-transform-origin: 50%25 50%25; -moz-animation: twirl-phone 0.5s alternate infinite linear; -o-transform-origin: 50%25 50%25; -o-animation: twirl-phone 0.5s alternate infinite linear; transform-origin: 50%25 50%25; animation: twirl-phone 0.5s alternate infinite linear; %7D @-webkit-keyframes wave-stroke %7B 100%25 %7B opacity: 0; %7D %7D @-moz-keyframes wave-stroke %7B 100%25 %7B opacity: 0; %7D %7D @-o-keyframes wave-stroke %7B 100%25 %7B opacity: 0; %7D %7D @keyframes wave-stroke %7B 100%25 %7B opacity: 0; %7D %7D .lb_phone-wave %7B -webkit-animation: wave-stroke 1s alternate infinite linear; -moz-animation: wave-stroke 1s alternate infinite linear; -o-animation: wave-stroke 1s alternate infinite linear; animation: twirl-phone 1s alternate infinite linear; %7D .delay1 %7B -webkit-animation-delay: 0.33s; -moz-animation-delay: 0.33s; -ms-animation-delay: 0.33s; -o-animation-delay: 0.33s; animation-delay: 0.33s; %7D .delay2 %7B -webkit-animation-delay: 0.66s; -moz-animation-delay: 0.66s; -ms-animation-delay: 0.66s; -o-animation-delay: 0.66s; animation-delay: 0.66s; %7D %3C/style%3E%3Ccircle cx='60.001' cy='60' fill='%23fcbf0a' r='55.993' id='fill-background'/%3E%3Cpath d='M99.212,99.955L93.05,78.953l-30.678,2.443L33.993,59.006l16.478,56.162c3.098,0.531,6.278,0.824,9.53,0.824 C75.273,115.992,89.111,109.871,99.212,99.955z' fill='%23000000' opacity='0.07' /%3E%3Cg id='lb_phone-head'%3E%3Cpath d='M92.894,81.197c-0.557,2.543-3.447,8.708-6.199,9.343c-2.33,0.539-4.754,0.812-7.219,0.812 C66,91.332,51.311,83.297,41.109,70.346C32.158,58.959,28.537,46.07,31.213,34.99c0.692-2.87,7.699-6.338,10.762-6.338 c1.423,0,2.195,0.614,2.599,1.137c0.424,0.559,7.855,11.889,8.277,12.622c1.619,2.793-1.176,4.661-2.867,5.797 c-2.928,1.948-5.678,3.796-3.137,9.152c0.037,0.08,2.809,5.994,7.293,10.234c4.313,4.566,10.185,7.303,10.243,7.34 c1.369,0.637,2.541,0.965,3.545,0.965c2.25,0,3.426-1.584,4.982-4.01c1.135-1.771,2.311-3.582,4.43-3.582 c0.711,0,1.406,0.211,2.078,0.654c0.117,0.076,11.938,7.785,12.494,8.209C92.953,77.961,93.279,79.311,92.894,81.197z' fill='%23FFFFFF'/%3E%3C/g%3E%3C/svg%3E"); 
+    background-size: contain!important;
+    width: 80px;
+    height: 80px;
+    z-index: 100000;
+    cursor: pointer;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+ }
+
+ .shadow{
+     position: fixed;
+     display: none;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     background-color: black;
+     opacity: .7;
+     z-index: 100000;
+ }
