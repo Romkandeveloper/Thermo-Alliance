@@ -16,7 +16,7 @@
 
 @font-face {
     font-family: 'Eurostile';
-    src: url('Eurostile-Bold.otf'); 
+    src: url('./fonts/Eurostile-Bold.otf'); 
     font-weight: normal;
     font-style: normal;
 }
