@@ -11,3 +11,8 @@ shadoow.addEventListener('click',function(){
     this.style.display = "none";
     modal.classList.remove('active');
 });
+
+var phoneMask = IMask(
+    document.getElementById('tel'), {
+      mask: '+{38} (000) 000-00-00'
+});
