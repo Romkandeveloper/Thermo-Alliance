@@ -42,9 +42,11 @@ body{
     padding: 10px 50px;
     padding-bottom: 0 !important;
     position: relative;
-
- 
 }
+
+
+    
+
 .page__title::before{
     content: "";
     left: 0;
@@ -451,4 +453,36 @@ body{
      background-color: black;
      opacity: .7;
      z-index: 100000;
+ }
+
+ @media (max-width: 850px){
+     .tel-blocks{
+         flex-direction: column;
+         align-items: center;
+     }
+     .tel-block{
+         width: initial;
+         max-width: none;
+     }
+ }
+ @media (max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+    .logo-left{
+        left: 15px;
+    }
+    .page{
+        padding: 10px 15px;
+    }
+    .page__title{
+        margin-top: 0;
+        font-size: 20px;
+    }
+    .page__list, .page__table{
+        font-size: 14px;
+    }
+    .page__important, .text-important{
+        font-size: 16px;
+    }
  }
